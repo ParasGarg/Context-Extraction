@@ -15,7 +15,7 @@ def isEmpty(value):
     return False
     
 #function to get list of scrapped files
-def filesList(basePath):
+def getFilesList(basePath):
     pathDictionary = {} #dictionary contains the restaurant username as key and list of page path as a value
     
     for root, directories, files in os.walk(basePath):
@@ -23,7 +23,7 @@ def filesList(basePath):
         pathDictionary[directory] = [] #defining empty list to every key
         
         for filename in fnmatch.filter(files, '*.html'): #foreach file in the directory
-            pathDictionary[directory].append(os.path.join(root, filename)) #addling matched file path in the dictionary
+            pathDictionary[directory].append(os.path.join(root, filename)) #adding matched file path in the dictionary
         
     return pathDictionary #returning directory
             
@@ -53,6 +53,6 @@ def reviewScrapper(restaurantDictionary, basePath):
 
 # main function
 if __name__ == '__main__':
-    basePath = "F:\\Projects\\BIA Scrapper\\Restaurants\\Scrapped Data\\"
-    restaurantDictionary = filesList(basePath)
+    basePath = "F:\\Github\\Context-Extraction\\Data\\" #directory path of saved scrapped data
+    restaurantDictionary = getFilesList(basePath)
     reviewScrapper(restaurantDictionary, basePath)
