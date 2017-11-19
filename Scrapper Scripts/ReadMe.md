@@ -1,4 +1,4 @@
-# Scrapper Script ReadMe
+# Scrapper Scripts
 These scrapper scripts scraps the web pages and produces files as an output
 
 # RestaurantListScrapper
