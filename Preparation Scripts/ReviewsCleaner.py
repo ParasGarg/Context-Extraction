@@ -72,6 +72,6 @@ if __name__ == '__main__':
     global dataPath
     
     stopLex = set(stopwords.words('english')) # build a set of english stopwrods
-    dataPath = "F:\\Projects\\BIA Scrapper\\\Data\\" #directory path of saved scrapped data
+    dataPath = "F:\\Github\\Context-Extraction\\\Data\\" #directory path of saved scrapped data
         
     reviewsClearner() #clean and saves the different versions to files

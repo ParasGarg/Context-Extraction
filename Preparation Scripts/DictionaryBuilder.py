@@ -6,7 +6,7 @@ from nltk.corpus import wordnet
 #function to save the dictionary in a file
 def saveDictionaryInFile(dictionary, filename):
     filename = "Dictionary - " + filename + ".txt" #file name
-    path = dataPath + filename #file path
+    path = dictionaryPath + filename #file path
     saveData = open(path, 'w') #create a file
     for word in dictionary:
         saveData.write(word + "\n") #write data to the file
@@ -16,7 +16,7 @@ def saveDictionaryInFile(dictionary, filename):
 def uniqueWords(files):
     for file in files:
         filename = "Sample Dictionary - " + file + ".txt" #file name
-        path = dataPath + filename #file path
+        path = dictionaryPath + filename #file path
         infile = open(path, 'r') #open and read a file
         
         dictionary = set() #dictionary for each file
@@ -29,7 +29,7 @@ def uniqueWords(files):
 def addSynonyms(files):
     for file in files:
         filename = "Dictionary - " + file + ".txt" #file name
-        path = dataPath + filename #file path
+        path = dictionaryPath + filename #file path
         infile = open(path, 'r') #open and read a file
         
         synonyms = set() #set to add unique synonyms
@@ -45,9 +45,9 @@ def addSynonyms(files):
             
 # main function
 if __name__ == '__main__':
-    global dataPath
+    global dictionaryPath
         
-    dataPath = "F:\\Projects\\BIA Scrapper\\Dictionary\\" #directory path of saved scrapped data
+    dictionaryPath = "F:\\Github\\Context-Extraction\\Data\\Dictionary\\" #directory path of saved scrapped data
     files = ["When", "Where", "Whom", "Occasion"] #list of events
     
     uniqueWords(files)
