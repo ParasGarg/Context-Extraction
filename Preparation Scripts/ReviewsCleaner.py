@@ -32,7 +32,8 @@ def getReviewsFiles(filePath):
 
 #function to get special characters and numbers free reviews
 def getSymbolFreeReviews(reviews, restaurant, path):
-    reviews = re.sub(r'[^a-zA-Z\s]+', '', reviews) #remove anything that isn't a letter, space, or number
+    reviews = re.sub("[^a-zA-Z\s'\\-]+", ' ', reviews) #remove anything that isn't a letter, space, or number
+    reviews = re.sub(' +', ' ', reviews) #remove extra spaces
     saveDataInFile(reviews, "reviews-symbol-free.txt", restaurant, path) #save the data to a file    
     return reviews #returns symbol free reviews
 
@@ -63,7 +64,7 @@ def reviewsClearner():
         if not isEmpty(restaurantReviewFile):
             reviews = open(restaurantReviewFile, 'r').read() #read the data from review file            
             reviews = getSymbolFreeReviews(reviews, restaurant, path) #removing symbols from reviews
-            reviews = getStopwordsFreeReviews(reviews, restaurant, path) #removing stopwords from reviews
+            #reviews = getStopwordsFreeReviews(reviews, restaurant, path) #removing stopwords from reviews
 
 # main function
 if __name__ == '__main__':
@@ -71,6 +72,6 @@ if __name__ == '__main__':
     global dataPath
     
     stopLex = set(stopwords.words('english')) # build a set of english stopwrods
-    dataPath = "F:\\Github\\Context-Extraction\\Data\\" #directory path of saved scrapped data
-    
+    dataPath = "F:\\Projects\\BIA Scrapper\\\Data\\" #directory path of saved scrapped data
+        
     reviewsClearner() #clean and saves the different versions to files
