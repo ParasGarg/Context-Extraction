@@ -23,8 +23,6 @@ early-afternoon
 late afternoon
 late-afternoon
 brunch
-snacks
-snack
 mid day
 mid-day
 midday
@@ -36,7 +34,6 @@ drinks
 pre-dinner
 pre dinner
 tonight
-to-night
 weeknight
 week night
 week-night
