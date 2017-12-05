@@ -1,5 +1,5 @@
 # Context Extraction
-The main aim of the project is to scrap reviews from https://www.yelp.com for American cuisine restaurants in NYC. Then from the scrapped reviews, it would extract the context and calculate the accuracy for each context. (Contexts considered are: Whom, When, Where, and Occasion) 
+The main aim of the project is to scrap reviews from a <website> for American cuisine restaurants in NYC. Then from the scrapped reviews, it would extract the context and calculate the accuracy for each context. (Contexts considered are: Whom, When, Where, and Occasion) 
     - 'Whom' denotes, with whom the user went to the restaurant (example: friends, family, etc.) 
     - 'When' denotes, for which part of the day the user dined in (example: lunch, dinner, etc.) 
     - 'Where' denotes, whether the user is local or tourist 
