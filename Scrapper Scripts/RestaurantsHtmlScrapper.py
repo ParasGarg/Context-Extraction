@@ -37,7 +37,7 @@ def getReviewPageCount(url):
         
     return page
 
-#function to scrap restatuarant names and url from yelp
+#function to scrap restatuarant names and url
 def restaurantsHtmlScrapper(restaurantsListFile, path):
     urlList = getRestaurantsUrl(restaurantsListFile) #get list of restaurants urls
     usernameList = getRestaurantUsername(restaurantsListFile) #get list of restaurants usernames
