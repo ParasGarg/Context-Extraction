@@ -16,9 +16,6 @@ sun
 dayout
 day-out
 day out
-nightout
-night out
-night-out
 mid-afternoon
 mid afternoon
 early afternoon
