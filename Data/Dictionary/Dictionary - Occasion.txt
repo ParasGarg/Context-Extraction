@@ -1,45 +1,75 @@
-christmastide
-spousal relationship
-christmastime
-christmas
-date stamp
 date
-meshing
-conflict
-yule
-particular date
-natal day
-fight
-battle
-union
-interlocking
-married couple
-man and wife
-troth
-involvement
-wedding
-wedlock
-dec 
-anniversary
-escort
-noel
-go out
-marriage ceremony
-matrimony
-xmas
-involution
-see
-day of remembrance
+date anniversay
 birthday
-employment
-marriage
-day of the month
-participation
-booking
+bday
+wedlock
 engagement
-appointment
-mesh
-go steady
-betrothal
-christmas day
+anniversay
+reception
+prom
+prom night
+prom-night
+propose
+marriage
+marriage anniversay
+wedding
+wedding anniversay
+funeral
+contest
+costume contest
+dog costume contest
+cat costume contest
+pet costume contest
+pageantry
+beauty pageant
+beauty contest
+party
+valentine's day
+valentines day
+valentine day
+v day
+v-day
+propose day
+promise day
+kiss day
+kick day
+slap day
+rose day
+hug day
+chocolate day
+teddy day
+christmas
+christmas eve
+christmastime
+christmastide
+yule
 yuletide
+noel
+xmas
+father's day
+mother's day
+teacher's day
+friendship day
+children's day
+veterans day
+independence day
+labour day
+labour day
+defense day
+patriot day
+columbus day
+memorial day
+aids day
+cancer day
+halloween
+thanksgiving
+thanks giving
+newyear
+new year
+new year's eve
+new year eve
+december 25
+dec 25
+nightout
+night out
+night-out
